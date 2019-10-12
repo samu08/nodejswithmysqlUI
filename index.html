@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+
+  
+    .jumbotron{
+  background:orange;
+  }
+  
+  </style>
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+
+
+   <form method="POST" action="/findname">
+ <label>Enter Your Name</label><br>
+ <input type="text" name="firstName" placeholder="Enter first name to be searched.." required>
+
+ <Button type="submit" class="btn btn-success" value="find Name"><span class="glyphicon glyphicon-search"></span>Search name</Button></Button>
+ </form>
+</nav>
+<div class="container text-center">
+  <div class="jumbotron">
+    
+     <h1>Hi..!Enter your information</h1>
+ <form method="POST" action="/infoinsert">
+    Enter  userid: <input type="text" name="userid" placeholder="Enter userid ..." required><br></br>
+Enter  firstname: <input type="text" name="firstname" placeholder="Enter first name..." required><br></br>
+Enter lastname: <input type="text" name="lastname" placeholder="Enter last name..." required></br></br>
+
+Enter product name: <input type="text" name="age" placeholder="Enter age..." required></br></br>
+
+ <input type="submit" class="btn btn-success"value="Enter data">
+ </form>
+    
+  </div>
+    
+</div>
+
+
+
+
+</body>
+</html>
